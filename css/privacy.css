@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+
+/* кнопка "на главную" */
+.buttonToMain {
+
+
+    /* margin: 20px; */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    padding: 20px;
+    text-decoration: none;
+    background-color: rgb(210, 210, 210);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+
+    border-radius: 10px;
+    color: black;
+}
+
+.buttonToMain:hover {
+    background-color: rgb(167, 167, 167);
+}
+
+/* чтобы футер не висел в середине */
+
+.privacy {
+    padding: 30px;
+
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+
+.privacy h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: var(--margin-bottom);
+
+    text-transform: uppercase;
+}
+
+.privacy > p,
+.privacy > h4,
+.privacy > ul {
+    margin-bottom: var(--margin-bottom);
+}
+
+.privacy > ul {
+    padding-left: 30px;
+}
+
+
+
+@media (max-width: 800px) {
+    .privacy h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .privacy {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .privacy h2 {
+        font-size: 25px;
+    }
+
+    .privacy > ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .privacy h2 {
+        font-size: 20px;
+    }
+
+    .privacy > ul {
+        padding-left: 20px;
+    }
+}

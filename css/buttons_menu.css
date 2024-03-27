@@ -1,0 +1,58 @@
+/* темная полоса с кнопками - переключение между категориями */
+
+
+.buttons {
+    --primary-color: #45474c;
+    --secondary-color: #4b5563;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+
+    background-color: var(--primary-color);
+    width: max-content;
+    
+    padding: 10px;
+    border-radius: 99px;
+
+    margin-bottom: var(--margin-top-bot);
+}
+
+.buttons button {
+    border-radius: 99px;
+    padding: 8px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.buttons .active,
+.buttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* media - buttons */
+@media (max-width: 618px) {
+    .buttons {
+        gap: 0;
+    }
+
+    .buttontext {
+        width: 80px;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        text-overflow: ellipsis;
+    }
+}

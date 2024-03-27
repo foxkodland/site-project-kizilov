@@ -1,0 +1,586 @@
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Чередовать фоны */
+.about,
+.decors,
+.contacts,
+.maps {
+    background-color: var(--bg_default);
+}
+
+.catalog,
+.photos,
+.feedback {
+    background-color: var(--bg_accent);
+    border-bottom: 2px rgba(118, 118, 118, 0.201) solid;
+    border-top: 2px rgba(118, 118, 118, 0.217) solid;
+}
+
+/* черная полоса у заголовков */
+.catalog h2,
+.decors h2,
+.photos h2,
+.feedback h2,
+.about .content h2,
+.maps h2,
+.contacts .info h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 30px;
+}
+
+.catalog h2::before,
+.decors h2::before,
+.photos h2::before,
+.feedback h2::before,
+.maps h2::before,
+.about .content h2::before,
+.contacts .info h2::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* 1 блок - заставка */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    min-height: 500px;
+    padding: 0 var(--padding-left-right);
+    
+    background-color: #323949;
+    background-image: url(../images/banner_3_light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner .content h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banner .content p {
+    font-size: 25px;
+    padding: 10px;
+    background: linear-gradient(to right, grey, rgba(128, 128, 128, 0));
+    color: white;
+}
+
+.banner .button {
+    translate: 0 70px;
+}
+
+
+
+
+
+
+/* about */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: var(--padding-top) var(--padding-left-right);
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.about .content h2 {
+    margin-bottom: var(--margin-top-bot);
+}
+
+.about .content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about .content ul {
+    font-size: 20px;
+}
+
+.about .content ul li {
+    margin-bottom: 5px;
+}
+
+.about .content .spisok {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about .content .spisok::before {
+    display: none;
+}
+
+.about .content ul {
+    padding-left: 30px;
+}
+
+.about .content li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about .content ul li::before {
+    content: "";
+    background-image: url(../images/icons8-тумба-96.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+}
+
+.about .content .material li::before {
+    background-image: url(../images/icons8-дерево-96.png);
+}
+
+.about .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 45%;
+    max-height: 500px;
+}
+
+
+.about .images img {
+    /* width: 100%; */
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+/*  photos - наши работы */
+.photos {
+    padding: var(--padding-top) var(--padding-left-right);
+}
+
+.photos h2 {
+    margin-bottom: var(--margin-top-bot);
+}
+
+.photos .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* при старте выкл два раздела */
+#panno,
+#tumbs,
+#decor {
+    display: none;
+}
+
+.photos .gallery > img {
+    cursor: pointer;
+
+    width: var(--size-photo);
+    height: var(--size-photo);
+    object-fit: cover;
+}
+
+
+
+/* feedback */
+.feedback {
+    padding: var(--padding-top) var(--padding-left-right);
+}
+
+.feedback h2 {
+    margin-bottom: var(--margin-top-bot);
+}
+
+.feedback .feeds {
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.feedback article {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(232, 232, 232);
+
+    padding: 25px;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
+}
+
+.feedback article > * {
+    margin-bottom: 20px;
+}
+
+.feedback article .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    line-clamp: 5;
+    box-orient: vertical;
+}
+
+.feedback article .date {
+    color: grey;
+    text-decoration: underline;
+}
+
+.feedback article .product {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.feedback article .product::before {
+    content: "";
+    background: url(../images/icons8-мебель-50.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* карта */
+.maps {
+    padding: var(--padding-top) var(--padding-left-right);
+}
+
+.maps h2 {
+    margin-bottom: var(--margin-top-bot);
+}
+
+.maps p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: var(--margin-top-bot);
+
+    border-left: 4px orange solid;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.maps iframe {
+    width: 1000px;
+    height: 400px;
+
+    border: 2px rgba(0, 0, 0, 0.073) solid;
+}
+
+
+
+
+
+
+
+/* catalog  - мебель и здесь же decors - одинаковые разделы*/
+.catalog,
+.decors {
+    padding: var(--padding-top) var(--padding-left-right);
+}
+
+.catalog h2,
+.decors h2{
+    margin-bottom: var(--margin-top-bot);
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: var(--margin-top-bot);
+}
+
+.item {
+    position: relative;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
+}
+
+.item:hover img {
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+.item article {
+    width: var(--size-product);
+    height: var(--size-product);
+
+    overflow: hidden;
+}
+
+.item h3 {
+    position: absolute;
+    z-index: 1;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.715);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* media - banner */
+@media (min-width: 1700px) {
+    .banner {
+        background-position: bottom;
+    }
+}
+
+@media (max-width: 1500px) {
+    .banner {
+        padding-left: 50px;
+        background-position: -70px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner {
+        background-position: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        min-height: 400px;
+    }
+
+    .banner .button {
+        translate: 0 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* media -- about */
+@media (max-width: 1000px) {
+    .about .images > img:nth-child(2) {
+        display: none;
+    }
+
+    .about .images {
+        width: min-content;
+    }
+
+    .about .content {
+        max-width: 100%; /* чтобы выкл ограничение по максимуму */
+    }
+}
+
+@media (max-width: 800px) {
+    .about .content ul {
+        padding-left: 15px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .about .images {
+        display: none;
+    }
+}
+
+
+/* media - catalog */
+@media (max-width: 570px) {
+    :root {
+        --size-product: 200px;
+    }
+}
+
+@media (max-width: 470px) {
+    :root {
+        --size-product: 300px;
+    }
+}
+
+
+/* media - photos */
+@media (max-width: 560px) {
+    :root {
+        --size-photo: 200px;
+    }
+}
+
+@media (max-width: 470px) {
+    :root {
+        --size-photo: 180px;
+    }
+}
+
+
+
+/* media - feedback */
+@media (max-width: 1000px) {
+    .feedback .feeds {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 760px) {
+    .feedback .feeds {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .feedback .feeds article {
+        width: 250px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 570px) {
+    .feedback .feeds article {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+
+/* media - maps */
+@media (max-width: 1000px) {
+    .maps .flex-column,
+    .maps .flex-column div {
+        width: 100%;
+    }
+
+    .maps iframe {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 1000px) {
+    .maps iframe {
+        width: 800px;
+    }
+}
+
+@media (max-width: 950px) {
+    .maps iframe {
+        width: 700px;
+    }
+}
+
+@media (max-width: 950px) {
+    .maps iframe {
+        width: 600px;
+    }
+} */
+
+
+.vk {
+    color: var(--bg_default);
+    padding: var(--margin-top-bot) var(--padding-left-right);
+    background-color: #323949;
+    background-image: url(../images/bg_vk.jpg);
+    background-size: cover;
+}
+
+.vk .flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.vk p {
+    font-size: 20px;
+}
+
+.vk .button {
+    background-color: rgb(100, 100, 255);
+    flex-shrink: 0;
+}
+
+@media (max-width: 530px) {
+    .vk .flex-row {
+        flex-direction: column;   
+    }
+
+    .vk p {
+        text-align: center;
+    }
+}

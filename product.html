@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- temp -->
+    <link rel="stylesheet" href="css/contacts.css">
+    <!--  -->
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/fullscreen.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/catalog">Изделия</a>
+            <a href="/decors">Декор</a>
+            <a href="#feedback">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+
+    <section class="product-description">
+        <div class="images">
+            <div class="preview">
+                <img src="images/fonar.jpg" alt="">
+            </div>
+            <div class="miniatures">
+                <img src="images/fonar.jpg" alt="">
+                <img src="images/icons8-карандаш-96.png" alt="">
+                <img src="images/Файл_000.png" alt="">
+                <img src="images/Файл_002.png" alt="">
+                <img src="images/fonar.jpg" alt="">
+                <img src="images/icons8-карандаш-96.png" alt="">
+                <img src="images/Файл_000.png" alt="">
+                <img src="images/Файл_002.png" alt="">
+                <img src="images/fonar.jpg" alt="">
+                <img src="images/icons8-карандаш-96.png" alt="">
+            </div>
+        </div>
+
+        <div class="info">
+            <h2>Тумба Морокко</h2>
+            <p>Материал фасадов: <span>бук, дуб по требованию</span></p>
+            <p>Материал корпуса: <span>МДФ</span></p>
+            <p class="color">Цвет: <span>на выбор клиента</span></p>
+            <p class="size">Размер: <span>130х654х25мм</span></p>
+
+            <div class="empty"></div>
+
+            <div class="price">
+                <p>25 098р</p>
+                <a class="button" href="#">Заказать</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="moreItems">
+        <h2>Примеры ручной работы</h2>
+        <div class="items">
+            <a href="">
+                <article class="item">
+                    <h3>Товар 1</h3>
+                    <img src="images/Файл_000.png" alt="">
+                </article>
+            </a>
+            <a href="">
+                <article class="item">
+                    <h3>Товар 1</h3>
+                    <img src="images/Файл_002.png" alt="">
+                </article>
+            </a>
+            <a href="">
+                <article class="item">
+                    <h3>Товар 1</h3>
+                    <img src="images/Файл_001.png" alt="">
+                </article>
+            </a>
+            <a href="">
+                <article class="item">
+                    <h3>Товар 1</h3>
+                    <img src="images/Файл_002.png" alt="">
+                </article>
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <section class="contacts" id="contacts">
+        <div class="info">
+            <h2>Связаться с нами</h2>
+            <p>Все наши изделия - ручной труд. <br> Перед тем как приступить к работе, мы обсудим с вами детали и пожелания</p>
+            <div class="phone">
+                <p>Позвоните или пишите на <span style="font-weight: bold;">whats up</span></p>
+                <a class="button number" href="tel:+79991112233">8-999-111-22-33</a>
+            </div>
+        </div>
+
+        <form action="" autocomplete="off" method="post">
+            <h3>Оставьте заявку</h3>
+        
+            <div class="flex-row">
+                <div class="left">
+                    <div>
+                        <label for="">Как вас зовут</label>
+                        <input type="text" placeholder="ваше имя" required>
+                    </div>
+        
+                    <div>
+                        <label for="">Телефон или email</label>
+                        <input type="text" placeholder="как с вами связаться" required>
+                    </div>
+                </div>
+                <div class="right">
+                    <label for="">Детали заказа (необязательно)</label>
+                    <textarea name="" id="" rows="7" placeholder="Вид изделия или пожелания"></textarea>
+                </div>
+            </div>
+            <div class="privacy">
+                <input type="checkbox" name="check_privacy" id="check_privacy" required>
+                <label for="check_privacy">Даю согласие на <a href="/privacy">обработку персональных данных</a></label>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+
+</section> 
+
+    <footer>
+        <a href="/">СУПЕРСАЙТ - мебель ручной работы</a>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/catalog">Изделия</a>
+            <a href="/decors">Декор</a>
+            <a href="#contacts">Контакты</a>
+            <a href="/privacy">Политика конфиденциальности</a>
+        </nav>
+    </footer>
+
+
+    <script src="js/preview.js"></script>
+    <script src="js/product_fullscreen_photo.js"></script>
+</body>
+</html>
