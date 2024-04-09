@@ -167,7 +167,7 @@
 
 .about .content ul li::before {
     content: "";
-    background-image: url(../images/icons8-тумба-96.png);
+    background-image: url(../images/icon-tumbe.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 30px;
@@ -176,7 +176,7 @@
 }
 
 .about .content .material li::before {
-    background-image: url(../images/icons8-дерево-96.png);
+    background-image: url(../images/icon-tree.png);
 }
 
 .about .images {
@@ -414,6 +414,13 @@
 @media (max-width: 800px) {
     .banner {
         background-position: left;
+    }
+}
+
+@media (max-width: 1500px) {
+    .banner {
+        padding-left: var(--padding-left-right);
+        background-position: -70px;
     }
 }
 
