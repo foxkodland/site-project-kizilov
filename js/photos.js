@@ -13,7 +13,7 @@ file: index.html
 */
 
 
-const buttonsExamples = document.querySelectorAll('.photos .buttons button')
+const buttonsExamples = document.querySelectorAll('.pagination__button')
 
 buttonsExamples.forEach((btn) => {
     btn.addEventListener("click", function (){
@@ -23,14 +23,14 @@ buttonsExamples.forEach((btn) => {
 
         // удалить у кнопок класс .active
         buttonsExamples.forEach((btn) => {
-            btn.classList.remove("active")
+            btn.classList.remove("pagination__button--active")
         })
 
         // дать класс active нужной кнопке
-        btn.classList.add("active")
+        btn.classList.add("pagination__button--active")
 
         // спрятать все разделы с фото
-        document.querySelectorAll('.photos .gallery').forEach((el) => {
+        document.querySelectorAll('.photos__gallery').forEach((el) => {
             el.style.display = "none"
         })
 

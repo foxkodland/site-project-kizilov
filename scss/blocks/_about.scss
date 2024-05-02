@@ -1,0 +1,82 @@
+
+
+/* about */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+    }
+
+    &__heading {
+        @include heading-line;
+        font-size: var(--font-size-heading);
+        margin-bottom: var(--margin-y);
+    }
+
+    &__description {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        font-size: 20px;
+        padding-left: 30px;
+
+        &--inner {
+            padding-left: 30px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 5px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &::before {
+            content: "";
+            background-image: url(../images/icon-tumbe.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+        }
+
+        &--icon::before {
+            background-image: url(../images/icon-tree.png);
+        }
+    }
+
+
+    &__wrap-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+        width: 45%;
+        max-height: 500px;
+    }
+    
+    &__image {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+

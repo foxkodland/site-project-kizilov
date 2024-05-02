@@ -1,6 +1,6 @@
 
 // 1 настройка - какие картинки открывать
-const photos = document.querySelectorAll ('.photos .gallery img')
+const photos = document.querySelectorAll ('.photos__gallery img')
 
 
 

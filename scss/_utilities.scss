@@ -1,0 +1,14 @@
+
+.section {
+    padding: var(--padding-top) var(--padding-x);
+
+    &--light {
+        background-color: var(--bg_default);
+    }
+
+    &--dark {
+        background-color: var(--bg_accent);
+        border-bottom: 2px rgba(118, 118, 118, 0.201) solid;
+        border-top: 2px rgba(118, 118, 118, 0.217) solid;
+    }
+}

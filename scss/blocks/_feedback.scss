@@ -1,0 +1,20 @@
+
+/* feedback */
+.feedback {
+    &__heading {
+        @include heading-line;
+        font-size: var(--font-size-heading);
+        margin-bottom: var(--margin-y);
+    }
+
+    &__list {
+        user-select: none;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+}
+
+

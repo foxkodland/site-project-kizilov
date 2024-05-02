@@ -1,0 +1,30 @@
+
+.burger {
+    --size-burger: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: var(--size-burger);
+    height: var(--size-burger);
+
+    &:hover {
+        cursor: pointer;
+        scale: 1.1;
+    }
+
+    span {
+        height: 4px;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    &--visible {
+        display: none;
+    }
+}
+

@@ -1,0 +1,42 @@
+
+.photos {
+    --size-photo: 250px;
+
+
+    &__heading {
+        @include heading-line;
+        font-size: var(--font-size-heading);
+        margin-bottom: var(--margin-y);
+    }
+    
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        img {
+            cursor: pointer;
+            width: var(--size-photo);
+            height: var(--size-photo);
+            object-fit: cover;
+        }
+    }
+
+    &__flex-center {
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--margin-y);
+    }
+
+    /* при старте выкл два раздела */
+    #panno,
+    #tumbs,
+    #decor {
+        display: none;
+    }
+}
+
+
+

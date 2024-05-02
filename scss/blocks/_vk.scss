@@ -1,0 +1,34 @@
+.vk {
+    --bg_default: #f2f2f2;
+    padding: var(--margin-y) var(--padding-x);
+
+
+    color: var(--bg_default);
+    background-color: #323949;
+    background-image: url(../images/bg_vk.jpg);
+    background-size: cover;
+
+    &__flex-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__text {
+        font-size: 20px;
+    }
+
+    @media (max-width: 530px) {
+        &__flex-row {
+            flex-direction: column;   
+        }
+    
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+
+

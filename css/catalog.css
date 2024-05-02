@@ -1,125 +1,40 @@
-
-:root {
-    --bg-gray: #f1f1f1;
-    --color-gray: #868686;
-
-    --size-card-img: 250px;
+@charset "UTF-8";
+/* черная полоса у заголовков */
+.catalog {
+  --size-card-img: 250px;
 }
-
-* {
-    margin: 0;
+.catalog__heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--margin-y);
 }
-
-
-button {
-    border: none;
-    outline: none;
+.catalog__heading::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: black;
 }
-
-a {
-    text-decoration: none;
-    color: black;
+.catalog__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: var(--margin-y);
 }
-
-
-/* section_catalog */
-.section_catalog {
-    padding: var(--padding-top) var(--padding-left-right);
+.catalog__flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.section_catalog h1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-
-    font-size: 30px;
-    /* margin-bottom: var(--margin-top-bot); */
-}
-
-.section_catalog h1::before {
-    content: "";
-    width: 40px;
-    height: 3px;
-    background-color: black;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-}
-
-
-.items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-
-
-/* карточка с товаром */
-.card {
-    border: 2px solid rgba(0, 0, 0, 0.066);
-}
-
-.card:hover {
-    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
-}
-
-.card .img {
-    margin-bottom: 10px;
-    width: var(--size-card-img);
-    height: calc(var(--size-card-img) + 50px);
-
-    overflow: hidden;
-}
-
-.card .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card:hover .img img {
-    transition: .2s;
-    scale: 1.05;
-}
-
-.card .info {
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    margin-bottom: 10px;
-}
-
-.card .info p {
-    color: var(--color-gray);
-}
-
-.card .info .price {
-    color: rgba(31, 31, 31, 0.715);
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.card .info .size {
-    font-size: 12px;
-    opacity: 0;
-}
-
-.card:hover .size {
-    opacity: 1;
-}
-
 
 /* media - раздел с товарами */
 @media (max-width: 1100px) {
-    .section_catalog h1 {
-        margin-bottom: var(--margin-top-bot);
-    }
-}
+  .section_catalog h1 {
+    margin-bottom: var(--margin-top-bot);
+  }
+}/*# sourceMappingURL=catalog.css.map */

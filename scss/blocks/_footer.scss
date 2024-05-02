@@ -1,0 +1,31 @@
+
+/* footer */
+.footer {
+    background-color: #323232;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--margin-y) var(--padding-x);
+
+    &__link {
+        color: rgb(216, 216, 216);
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+

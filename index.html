@@ -13,290 +13,316 @@
     <link rel="stylesheet" href="css/contacts.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <a href="/"><img src="images/logo.jpg" alt=""></a>
-            <!-- <p>Kizilov</p> -->
+            <a class="logo__link" href="/"><img class="logo__image" src="images/logo.jpg" alt=""></a>
+            <p class="logo__name">Kizilov</p>
         </div>
-        <div class="empty"></div>
-        <div class="burger">
+        <div class="header__empty"></div>
+        <div class="burger burger--visible">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="/catalog.html">Изделия</a>
-            <a href="/catalog.html#decors">Декор</a>
-            <a href="#feedback">Отзывы</a>
-            <a href="#contacts">Контакты</a>
+        <nav class="menu">
+            <a class="menu__link" href="/">Главная</a>
+            <a class="menu__link"href="/catalog.html">Изделия</a>
+            <a class="menu__link"href="/catalog.html#decors">Декор</a>
+            <a class="menu__link"href="#feedback">Отзывы</a>
+            <a class="menu__link"href="#contacts">Контакты</a>
         </nav>
         
-        <a class="nav__phone" href="tel:+79991112233">8-988-777-55-44</a>
+        <a class="header__phone" href="tel:+79991112233">8-988-777-55-44</a>
     </header>
 
 
     <div class="banner">
-        <div class="content">
-            <h1>Мебель ручной работы на заказ</h1>
-            <p>Изделия для уникальных людей</p>
-            <a class="button" href="#catalog">Наши работы</a>
+        <div class="banner__content">
+            <h1 class="banner__title">Мебель ручной работы на заказ</h1>
+            <p class="banner__slogan">Изделия для уникальных людей</p>
+            <a class="banner__button" href="#catalog"><button class="button">Наши работы</button></a>
         </div>
     </div>
 
-    <section class="about">
-        <div class="content">
-            <h2>О нас</h2>
+    <section class="section section--light">
+        <div class="about">
+            <div class="about__content">
+                <h2 class="about__heading">О нас</h2>
+                <p class="about__description">В нашей мастерской мы в ручную изготавливаем красивые изделия из разных пород дерева</p>
+                <ul class="about__list">
+                    <li class="about__item">Уникальная handmade мебель</li>
+                    <li class="about__item">Готовое изделие за 2 месяца</li>
+                    <li class="about__item">Качественные массивы</li>
+                    <li class="">
+                        <ul class="about__list about__list--inner">
+                            <li class="about__item about__item--icon">Дуб</li>
+                            <li class="about__item about__item--icon">Береза</li>
+                            <li class="about__item about__item--icon">Бук</li>
+                        </ul>
+                    </li>
+                    <li class="about__item">Долговечные изделия</li>
+                    <li class="about__item">К нам можно со своим эскизом и идеей</li>
+                    <li class="about__item">Доступны все цвета</li>
+                </ul>
+            </div>
 
-            <p>В нашей мастерской мы в ручную изготавливаем красивые изделия из разных пород дерева</p>
-            <ul>
-                <li>Уникальная handmade мебель</li>
-                <li>Готовое изделие за 2 месяца</li>
-                <li>Качественные массивы</li>
-                <li class="spisok">
-                    <ul class="material">
-                        <li>Дуб</li>
-                        <li>Береза</li>
-                        <li>Бук</li>
-                    </ul>
-                </li>
-                <li>Долговечные изделия</li>
-                <li>К нам можно со своим эскизом и идеей</li>
-                <li>Доступны все цвета</li>
-            </ul>
-        </div>
-
-        <div class="images">
-            <!-- <img src="images/Файл_002.png" alt=""> -->
-            <img src="images/About_1.png" alt="">
-            <img src="images/about_2.png" alt="">
+            <div class="about__wrap-images">
+                <!-- <img src="images/Файл_002.png" alt=""> -->
+                <img class="about__image" src="images/about_1_light.png" alt="">
+                <img class="about__image" src="images/about_2_light.png" alt="">
+            </div>
         </div>
     </section>
 
 
-    <section class="catalog" id="catalog">
-        <h2>Мебель</h2>
-        <div class="items">
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_000.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_001.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
+    <section class="section section--dark" id="catalog">
+        <div class="catalog">
+            <h2 class="catalog__heading">Мебель</h2>
+            <div class="catalog__list">              
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                    </article>
+                </a>
+            </div>
 
-
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_001.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
+            <div class="catalog__flex-center">
+                <a href="/catalog.html" class="button">Посмотреть все</a>
+            </div>
         </div>
-
-        <div class="flex-center">
-            <a href="/catalog.html" class="button">Посмотреть все</a>
-        </div>
-        
     </section>
 
 
-    <section class="decors">
-        <h2>Элементы декора</h2>
-        <!-- <p>Мы дополнение к нашим изделиям мы предлагаем</p> -->
-        <div class="items">
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-            <a href="" class="item">
-                <article>
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-        </div>
+    <section class="section section--light" id="catalog">
+        <div class="catalog">
+            <h2 class="catalog__heading">Элементы декора</h2>
+            <div class="catalog__list">              
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                    </article>
+                </a>
+            </div>
 
-        <div class="flex-center">
-            <a href="/catalog.html#decors" class="button">Смотреть все</a>
+            <div class="catalog__flex-center">
+                <a href="/catalog.html" class="button">Посмотреть все</a>
+            </div>
         </div>
     </section>
 
     <section class="vk">
-        <div class="flex-row">
-            <p>Закулисье: чем вдохновляемся, как выполняем заказы и еще многое</p>
-            <a href="#" class="button">наш VK</a>
+        <div class="vk__flex-row">
+            <p class="vk__text">Закулисье: чем вдохновляемся, как выполняем заказы и еще многое</p>
+            <a href="#" class="button button--blue">наш VK</a>
         </div>
     </section>
 
-    <section class="photos">
-        <h2>Фото наших работ</h2>
-        <div class="flex-center">
-            <div class="buttons">
-                <button data-photos="commode" class="active">Комоды</button>
-                <button data-photos="tumbs"><span class="buttontext">Тумбы прикроватные</span></button>
-                <button data-photos="panno">Панно</button>
-                <button data-photos="decor">Декор</button>
+    <section class="section section--dark">
+        <div class="photos">
+            <h2 class="photos__heading">Фото наших работ</h2>
+            <div class="photos__flex-center">
+                <div class="pagination">
+                    <button data-photos="commode" class="pagination__button pagination__button--active">Комоды</button>
+                    <button data-photos="tumbs" class="pagination__button"><span class="pagination__long-text">Тумбы прикроватные</span></button>
+                    <button data-photos="panno" class="pagination__button">Панно</button>
+                    <button data-photos="decor" class="pagination__button">Декор</button>
+                </div>
             </div>
-        </div>
-        <div class="gallery" id="commode">
-            <img src="images/del_material.webp" alt="">
-            <img src="images/Файл_000.png" alt="">
-            <img src="images/Файл_001.png" alt="">
-            <img src="images/Файл_002.png" alt="">
-            <img src="images/Файл_001.png" alt="">
-            <img src="images/del_material.webp" alt="">
-            <img src="images/Файл_000.png" alt="">
-        </div>
-        <div class="gallery" id="tumbs">
-            <img src="images/del_material.webp" alt="">
-            <img src="images/Файл_000.png" alt="">
-        </div>
-        <div class="gallery" id="panno">
-            <img src="images/del_material.webp" alt="">
-            <img src="images/Файл_000.png" alt="">
-            <img src="images/del_material.webp" alt="">
-            <img src="images/Файл_000.png" alt="">
-            <img src="images/Файл_001.png" alt="">
-        </div>
-        <div class="gallery" id="decor">
-            <img src="images/del_material.webp" alt="">
-            <img src="images/Файл_000.png" alt="">
+            <div class="photos__gallery" id="commode">
+                <img src="images/del_material.webp" alt="">
+                <img src="images/Файл_000.png" alt="">
+                <img src="images/Файл_001.png" alt="">
+                <img src="images/Файл_002.png" alt="">
+                <img src="images/Файл_001.png" alt="">
+                <img src="images/del_material.webp" alt="">
+                <img src="images/Файл_000.png" alt="">
+            </div>
+            <div class="photos__gallery" id="tumbs">
+                <img src="images/del_material.webp" alt="">
+                <img src="images/Файл_000.png" alt="">
+            </div>
+            <div class="photos__gallery" id="panno">
+                <img src="images/del_material.webp" alt="">
+                <img src="images/Файл_000.png" alt="">
+                <img src="images/del_material.webp" alt="">
+                <img src="images/Файл_000.png" alt="">
+                <img src="images/Файл_001.png" alt="">
+            </div>
+            <div class="photos__gallery" id="decor">
+                <img src="images/del_material.webp" alt="">
+                <img src="images/Файл_000.png" alt="">
+            </div>
         </div>
     </section>
 
-    <section class="contacts" id="contacts">
-            <div class="info">
-                <h2>Связаться с нами</h2>
-                <p>Все наши изделия - ручной труд. <br> Перед тем как приступить к работе, мы обсудим с вами детали и пожелания</p>
-                <div class="phone">
-                    <p>Позвоните или пишите на <span style="font-weight: bold;">whats up</span></p>
-                    <a class="button number" href="tel:+79991112233">8-999-111-22-33</a>
+    <section class="section section--light" id="contacts">
+        <div class="section-contacts">
+            <div class="contacts">
+                <h2 class="contacts__heading">Связаться с нами</h2>
+                <p class="contacts__description">Все наши изделия - ручной труд. <br> Перед тем как приступить к работе, мы обсудим с вами детали и пожелания</p>
+                <div class="contacts__block">
+                    <p class="contacts__text">Позвоните или пишите на <span style="font-weight: bold;">whats up</span></p>
+                    <a class="button button--blue" href="tel:+79991112233">8-999-111-22-33</a>
                 </div>
             </div>
 
-            <form action="" autocomplete="off" method="post">
-                <h3>Оставьте заявку</h3>
+            <form class="form" action="" autocomplete="off" method="post">
+                <h3 class="form__heading">Оставьте заявку</h3>
             
-                <div class="flex-row">
-                    <div class="left">
+                <div class="form__flex-row">
+                    <div class="form__group">
                         <div>
-                            <label for="">Как вас зовут</label>
-                            <input type="text" placeholder="ваше имя" required>
+                            <label class="form__label" for="name">Как вас зовут</label>
+                            <input class="form__input" name="name" type="text" placeholder="ваше имя" required>
                         </div>
-            
+                        
                         <div>
-                            <label for="">Телефон или email</label>
-                            <input type="text" placeholder="как с вами связаться" required>
+                            <label class="form__label" for="contact">Телефон или email</label>
+                            <input class="form__input" name="contact" type="text" placeholder="как с вами связаться" required>
                         </div>
                     </div>
-                    <div class="right">
-                        <label for="">Детали заказа (необязательно)</label>
-                        <textarea name="" id="" rows="7" placeholder="Вид изделия или пожелания"></textarea>
+                    <div class="form__group">
+                        <label class="form__label" for="text">Детали заказа (необязательно)</label>
+                        <textarea class="form__input" name="text" id="" rows="6" placeholder="Вид изделия или пожелания"></textarea>
                     </div>
                 </div>
-                <div class="privacy">
-                    <input type="checkbox" name="check_privacy" id="check_privacy" required>
-                    <label for="check_privacy">Даю согласие на <a href="/privacy">обработку персональных данных</a></label>
+                <div class="form__privacy privacy">
+                    <input class="privacy__control" type="checkbox" name="check_privacy" id="check_privacy" required>
+                    <label class="privacy__label" for="check_privacy">Даю согласие на <a class="privacy__link" href="/privacy">обработку персональных данных</a></label>
                 </div>
                 <button class="button" type="submit">Отправить</button>
             </form>
+        </div>
     </section> 
 
-    <section class="feedback" id="feedback">
-        <h2>Отзывы о нашей работе</h2>
-        <div class="feeds">
-            <article>
-                <h3>Людмила</h3>
-                <p class="product">Панно Бурое</p>
-                <p class="text">Все сделали супер, обсуживание отличное. Рекомандую этот сервис знакомым и друзьям. Сделали быстро и качественно. Дают гарантию на свои услуги и время для проведения</p>
-                <p class="date">Дата: 10-03-2024</p>
-            </article>
-            <article>
-                <h3>Людмила</h3>
-                <p class="product">Пианино</p>
-                <p class="text"> Дают гарантию на свои услуги и время для проведения</p>
-                <p class="date">Дата: 10-03-2024</p>
-            </article>
-            <article>
-                <h3>Людмила</h3>
-                <p class="product">Доска</p>
-                <p class="text">Все сделали супер, обсуживание отличное. Рекомандую этот сервис знакомым и друзьям. Сделали быстро и качественно. Дают гарантию на свои услуги и время для проведения тличное. Рекомандую этот сервис знакомым и друзьям. Сделали быстро и качественно. Дают гарантию на свои услуги и время для проведения</p>
-                <p class="date">Дата: 10-03-2024</p>
-            </article>
-            <article>
-                <h3>Людмила</h3>
-                <p class="product">Пианино</p>
-                <p class="text"> Дают гарантию на свои услуги и время для проведения</p>
-                <p class="date">Дата: 10-03-2024</p>
-            </article>
 
+
+
+    <section class="section section--dark" id="feedback">
+        <div class="feedback">
+            <h2 class="feedback__heading">Отзывы о нашей работе</h2>
+            <div class="feedback__list">
+                <article class="feedback-card">
+                    <h3 class="feedback-card__title">Людмила</h3>
+                    <p class="feedback-card__product">Панно Бурое</p>
+                    <p class="feedback-card__text">Все сделали супер, обсуживание отличное. Рекомандую этот сервис знакомым и друзьям. Сделали быстро и качественно. Дают гарантию на свои услуги и время для проведения</p>
+                    <p class="feedback-card__date">Дата: 10-03-2024</p>
+                </article>
+                <article class="feedback-card">
+                    <h3 class="feedback-card__title">Людмила</h3>
+                    <p class="feedback-card__product">Пианино</p>
+                    <p class="feedback-card__text"> Дают гарантию на свои услуги и время для проведения</p>
+                    <p class="feedback-card__date">Дата: 10-03-2024</p>
+                </article>
+                <article class="feedback-card">
+                    <h3 class="feedback-card__title">Людмила</h3>
+                    <p class="feedback-card__product">Доска</p>
+                    <p class="feedback-card__text">Все сделали супер, обсуживание отличное. Рекомандую этот сервис знакомым и друзьям. Сделали быстро и качественно. Дают гарантию на свои услуги и время для проведения тличное. Рекомандую этот сервис знакомым и друзьям. Сделали быстро и качественно. Дают гарантию на свои услуги и время для проведения</p>
+                    <p class="feedback-card__date">Дата: 10-03-2024</p>
+                </article>
+                <article class="feedback-card">
+                    <h3 class="feedback-card__title">Людмила</h3>
+                    <p class="feedback-card__product">Пианино</p>
+                    <p class="feedback-card__text"> Дают гарантию на свои услуги и время для проведения</p>
+                    <p class="feedback-card__date">Дата: 10-03-2024</p>
+                </article>
+            </div>
         </div>
     </section>
 
-    <section class="maps">
-        <h2>Мы здесь</h2>
-
-        <div class="flex-center">
-            <div class="flex-column">
-                <p>г.ГОРОД, ул.СУПЕР</p>
+    <section class="section section--light">
+        <div class="maps">
+            <h2 class="maps__heading">Мы здесь</h2>
+            <div class="maps__content">
+                <p class="maps__sity">г.ГОРОД, ул.СУПЕР</p>
                 <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/moskva/53000094/?ll=37.385439%2C55.584227&utm_medium=mapframe&utm_source=maps&z=9.05" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.385439%2C55.584227&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.05" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>    
             </div>
         </div>
     </section>
 
 
-    <footer>
-        <a href="/">СУПЕРСАЙТ - мебель ручной работы</a>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="/catalog.html">Изделия</a>
-            <a href="/decors">Декор</a>
-            <a href="#contacts">Контакты</a>
-            <a href="/privacy">Политика конфиденциальности</a>
+    <footer class="footer">
+        <a class="footer__link" href="/">СУПЕРСАЙТ - мебель ручной работы</a>
+        <nav class="footer__nav">
+            <a class="footer__link" href="/">Главная</a>
+            <a class="footer__link" href="/catalog.html">Изделия</a>
+            <a class="footer__link" href="/decors">Декор</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
+            <a class="footer__link" href="/privacy">Политика конфиденциальности</a>
         </nav>
     </footer>
 

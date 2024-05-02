@@ -1,0 +1,40 @@
+
+/* 1 блок - заставка */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    min-height: 500px;
+    padding: 0 var(--padding-x);
+    
+    background-color: #323949;
+    background-image: url(../images/banner_3_light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    &__slogan {
+        font-size: 25px;
+        padding: 10px;
+        background: linear-gradient(to right, grey, rgba(128, 128, 128, 0));
+        color: white;
+    }
+
+    &__button {
+        translate: 0 70px;
+    }
+}

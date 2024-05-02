@@ -1,0 +1,17 @@
+.privacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    .privacy__control {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .privacy__link {
+        text-decoration: underline;
+        color: #2b2b2b;
+    }
+}

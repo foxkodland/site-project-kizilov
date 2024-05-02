@@ -1,0 +1,19 @@
+.button {
+    color: black;
+    cursor: pointer;
+    padding: 15px 35px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: orange;
+    min-width: max-content;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.1s;
+    }
+
+    &--blue {
+        background-color: rgb(100, 100, 255);
+    }
+}
