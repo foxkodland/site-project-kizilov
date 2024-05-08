@@ -26,4 +26,19 @@
             scale: 1.05;
         }
     }
+
+
+    /* media header */
+    @media (max-width: 780px) {
+        & {
+            position: relative;
+        }
+
+        &__phone {
+            position: absolute;
+            top: 20px;
+            left: calc(50% - 72px);
+            font-size: 20px;
+        }
+    }
 }

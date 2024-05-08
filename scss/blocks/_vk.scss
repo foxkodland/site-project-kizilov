@@ -1,11 +1,9 @@
 .vk {
-    --bg_default: #f2f2f2;
     padding: var(--margin-y) var(--padding-x);
 
-
-    color: var(--bg_default);
+    color: #f2f2f2;
     background-color: #323949;
-    background-image: url(../images/bg_vk.jpg);
+    // background-image: url(../images/bg_vk.jpg);
     background-size: cover;
 
     &__flex-row {

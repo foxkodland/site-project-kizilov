@@ -1,0 +1,26 @@
+.cross {
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+
+    cursor: pointer;
+
+    &__line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: rgb(244, 244, 244);
+        border-radius: 5px;
+        transform: rotate(45deg);
+
+        &--rotate {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

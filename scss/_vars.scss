@@ -9,3 +9,17 @@
 
     --font-size-heading: 30px;
 }
+
+
+@media (max-width: 1200px) {
+    :root {
+        --padding-x: 50px;
+        --margin-y: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    :root {
+        --padding-x: 25px;
+    }
+}

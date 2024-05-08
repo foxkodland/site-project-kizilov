@@ -7,7 +7,7 @@
 
     height: 100%;
 
-    .menu__link {
+    &__link {
         height: 100%;
         color: white;
         text-decoration: none;
@@ -19,6 +19,37 @@
 
         &:hover {
             background-color: #1c1c1c;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__link {
+            padding-inline: 15px;
+        }
+    }
+
+    @media (max-width: 780px) {
+        & {
+            overscroll-behavior-x: contain;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.797);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            padding-top: 50px;
+            top: 0;
+            left: 0;
+            position: fixed;
+            transform: translateX(100%);
+            transition: 0.3s;
+        }
+
+        &__link {
+            font-size: 20px;
+            padding: 25px 15px;
         }
     }
 }

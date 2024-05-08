@@ -16,4 +16,9 @@
     &--blue {
         background-color: rgb(100, 100, 255);
     }
+
+    &--dark {
+        background-color: black;
+        color: white;
+    }
 }

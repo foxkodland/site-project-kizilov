@@ -1,7 +1,4 @@
 
-/* catalog  - мебель и здесь же decors - одинаковые разделы*/
-
-
 .card-base {
     --size-product: 250px;  /* карточка товара */
 
@@ -42,6 +39,19 @@
         object-fit: cover;
     }
 
+
+    /* media - catalog */
+    @media (max-width: 570px) {
+        & {
+            --size-product: 200px;
+        }
+    }
+
+    @media (max-width: 470px) {
+        & {
+            --size-product: 300px;
+        }
+    }
 }
 
 

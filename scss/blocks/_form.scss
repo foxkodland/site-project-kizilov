@@ -60,6 +60,23 @@
     &__privacy {
         margin-bottom: 20px;
     }
+
+
+    @media (max-width: 790px) {
+        & {
+            width: 100%;
+        }
+
+        &__flex-row {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        &__group > div {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 

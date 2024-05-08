@@ -8,7 +8,7 @@ file: index.html
     
 Скрипт получает атрибут кнопки.
 прячет все разделы
-показывает раздел, у которого тот же класс, что и атрибут кнопки
+показывает раздел, у которого тот же data-атрибут, что и атрибут кнопки
 
 */
 
@@ -18,7 +18,7 @@ const buttonsExamples = document.querySelectorAll('.pagination__button')
 buttonsExamples.forEach((btn) => {
     btn.addEventListener("click", function (){
         // получить атрибут кноки
-        var className = btn.dataset.photos
+        var galleryGroup = btn.dataset.photos
 
 
         // удалить у кнопок класс .active
@@ -35,7 +35,7 @@ buttonsExamples.forEach((btn) => {
         })
 
         // показать нужный раздел
-        document.querySelector(".photos #" + className).style.display = "flex"
+        document.querySelector(".photos [data-gallery-group='" + galleryGroup + "'").style.display = "flex"
     })
 })
 

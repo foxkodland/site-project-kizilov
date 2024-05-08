@@ -1,113 +1,87 @@
-
+@charset "UTF-8";
 /* для фулскрин в связке с js*/
 .fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    z-index: 10; /* чтобы не видно было при скроле другие элементы с position: absolute */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* чтобы не видно было при скроле другие элементы с position: absolute */
+}
+.fullscreen__bg {
+  background-color: rgba(0, 0, 0, 0.854);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  cursor: zoom-out;
+}
+.fullscreen__image {
+  height: 100%;
+  max-width: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+.fullscreen__button {
+  position: absolute;
+  top: 49%;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  border: 1px solid white;
+}
+.fullscreen__button--right {
+  left: unset;
+  right: 20px;
+}
+.fullscreen__button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.fullscreen__cross {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.fullscreen--isVisible {
+  display: none;
 }
 
-.fullscreen_back {
-    background-color: rgba(0, 0, 0, 0.854);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    cursor: zoom-out;
+.cross {
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+  cursor: pointer;
 }
-
-.fullscreen > img {
-    height: 100%;
-    max-width: 95%;
-    object-fit: cover;
-    border: 5px solid white;
-    box-sizing: border-box;
+.cross__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 5px;
+  transform: rotate(45deg);
 }
-
-.fullscreen .left, 
-.fullscreen .right {
-
-    position: absolute;
-    top: 49%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    font-size: 20px;
-    font-weight: 900;
-
-    width: 45px;
-    height: 45px;
-
-    border-radius: 100px;
-    border: 1px solid white;
+.cross__line--rotate {
+  transform: rotate(-45deg);
 }
-
-.fullscreen .left {
-    left: 20px;
-}
-
-.fullscreen .right {
-    right: 20px;
-}
-
-.fullscreen .left:hover, 
-.fullscreen .right:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
-    transition: .3s;
-    cursor: pointer;
-}
-
-
-.fullscreen {
-    display: none;
-}
-
-/* крестик */
-.fullscreen .cross {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    
-    width: 30px;
-    height: 30px;
-    z-index: 10;
-
-    cursor: pointer;
-}
-
-.fullscreen .cross__span1,
-.fullscreen .cross__span2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: rgb(244, 244, 244);
-    border-radius: 5px;
-}
-
-.fullscreen .cross__span1 {
-    transform: rotate(45deg);
-}
-
-.fullscreen .cross__span2 {
-    transform: rotate(-45deg);
-}
-
 .cross:hover {
-    transform: scale(1.1);
-}
+  transform: scale(1.1);
+}/*# sourceMappingURL=fullscreen.css.map */

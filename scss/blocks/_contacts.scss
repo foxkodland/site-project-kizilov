@@ -5,19 +5,19 @@
 
     font-size: 20px;
 
-    .contacts__heading {
+    &__heading {
         @include heading-line;
         font-size: var(--font-size-heading);
         margin-bottom: var(--margin-y);
     }
 
-    .contacts__description {
+    &__description {
         border-left: 4px orange solid;
         padding: 5px;
         padding-left: 10px;
     }
 
-    .contacts__block {
+    &__block {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -29,7 +29,31 @@
         box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
     }
 
-    .contacts__text {
+    &__text {
         margin-bottom: 20px;
+    }
+
+
+    /* media - block contacts с формой */
+    @media (max-width: 1150px) {
+        &__heading,
+        &__description {
+            margin-bottom: var(--margin-y);
+        }
+
+        &__block {
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 510px) {
+        &__block {
+            width: 100%;
+        }
+
+        &__text {
+            width: 80%;
+            text-align: center;
+        }
     }
 }

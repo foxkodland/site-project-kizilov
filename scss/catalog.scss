@@ -1,7 +1,9 @@
 
-
-// зачем это файл?
 @import "mixins";
 
 @import 
-    "blocks/catalog";
+    "blocks/section-product",
+    "blocks/pagination",
+    "blocks/section-catalog",
+    "blocks/card-medium",
+    "blocks/product-info";

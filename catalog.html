@@ -1,138 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalog</title>
+    <link type="Image/x-icon" href="/images/favicon.ico" rel="icon">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/catalog.css">
-    <link rel="stylesheet" href="css/buttons_menu.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="images/logo.jpg" alt="">
+            <a class="logo__link" href="/"><img class="logo__image" src="images/logo.jpg" alt="Главная страница"></a>
+            <p class="logo__name">Kizilov</p>
         </div>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="/catalog">Изделия</a>
-            <a href="/decors">Декор</a>
-            <a href="/#feedback">Отзывы</a>
-            <a href="/#contacts">Контакты</a>
+        <div class="header__empty"></div>
+        <div class="burger burger--visible">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <a class="menu__link" href="/">Главная</a>
+            <a class="menu__link"href="/catalog.html">Изделия</a>
+            <a class="menu__link"href="/catalog.html#decors">Декор</a>
+            <a class="menu__link"href="#feedback">Отзывы</a>
+            <a class="menu__link"href="#contacts">Контакты</a>
         </nav>
+        
+        <a class="header__phone" href="tel:+79991112233">8-988-777-55-44</a>
     </header>
 
 
 
+    <section class="section section--light">
+        <div class="section-catalog">
+            <h1 class="section-catalog__heading">Наши изделия</h1>
+            <div class="section-catalog__wrap--flex-center section-catalog__wrap--margin-bot">
+                <div class="pagination">
+                    <button data-examples="catalogAll" class="pagination__button pagination__button--active">Все</button>
+                    <button data-examples="catalogCommode" class="pagination__button">Комоды</button>
+                    <button data-examples="catalogTumbs" class="pagination__button"><span class="pagination__long-text">Тумбы прикроватные</span></button>
+                    <button data-examples="catalogPanno" class="pagination__button">Панно</button>
+                    <button data-examples="catalogDecors" class="pagination__button">Декор</button>
+                </div>
+            </div>
 
+            <div class="section-catalog__list">
+                <article class="card-medium" data-catalog_group="catalogCommode">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/dlkofuoj.jpg" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna Auranna Auranna Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
 
-    <section class="section_catalog">
-    <h1>Наши изделия</h1>
-    <div class="flex-center">
-        <div class="buttons">
-            <button data-examples="catalogAll" class="active">Все</button>
-            <button data-examples="catalogCommode">Комоды</button>
-            <button data-examples="catalogTumbs"><span class="buttontext">Тумбы прикроватные</span></button>
-            <button data-examples="catalogPanno">Панно</button>
-            <button data-examples="catalogDecors">Декор</button>
+                <article class="card-medium" data-catalog_group="catalogCommode">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/isqmvarc.jpg" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-medium" data-catalog_group="catalogCommode">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/kkwjgwcj.png" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-medium" data-catalog_group="catalogCommode">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/myzkvaex.jpg" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-medium" data-catalog_group="catalogCommode">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/oluwejln.jpg" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-medium" data-catalog_group="catalogTumbs">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/myzkvaex.jpg" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-medium" data-catalog_group="catalogPanno">
+                    <a href="/product.html">
+                        <div class="card-medium__images-wrap">
+                            <img class="card-medium__images" src="files/oluwejln.jpg" alt="">
+                        </div>
+                        <div class="card-medium__info-wrap">
+                            <h3 class="card-medium__title" >Auranna</h3>
+                            <p class="card-medium__price">23 990р</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
         </div>
-    </div>
-    
-    <div class="items">
-        <article class="card" data-catalog_group="catalogCommode">
-            <a href="/product.html">
-                <div class="img">
-                    <img src="images/Файл_001.png" alt="">
-                </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    <p class="price">23 990р</p>
-                </div>
-            </a>
-        </article>
-        <article class="card" data-catalog_group="catalogDecors">
-            <a href="/product.html">
-                <div class="img">
-                    <img src="images/Файл_001.png" alt="">
-                </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    
-                    <p class="price">23 990р</p>
-                </div>
-            </a>
-        </article>
-        <article class="card" data-catalog_group="catalogCommode">
-            <a href="/product.html">
-            <div class="img">
-                <img src="images/Файл_000.png" alt="">
-            </div>
-            <div class="info">
-                <h3>Auranna</h3>
-                
-                <p class="price">23 990р</p>
-            </div>
-        </a>
-        </article>
-        <article class="card" data-catalog_group="catalogCommode">
-            <a href="/product.html">
-            <div class="img">
-                <img src="images/Файл_001.png" alt="">
-                <div class="heart">
-                    <img src="img/heart.svg" alt="">
-                </div>
-            </div>
-            <div class="info">
-                <h3>Auranna</h3>
-                
-                <p class="price">23 990р</p>
-
-            </div>
-        </a>
-        </article>
-        <article class="card" data-catalog_group="catalogTumbs">
-            <a href="/product.html">
-            <div class="img">
-                <img src="images/Файл_002.png" alt="">
-                <div class="heart">
-                    <img src="img/heart.svg" alt="">
-                </div>
-            </div>
-            <div class="info">
-                <h3>Auranna</h3>
-                
-                <p class="price">23 990р</p>
-            </div>
-        </a>
-        </article>
-        <article class="card" data-catalog_group="catalogPanno">
-            <a href="/product.html">
-            <div class="img">
-                <img src="images/fonar.jpg" alt="">
-            </div>
-            <div class="info">
-                <h3>Auranna</h3>
-                
-                <p class="price">23 990р</p>
-            </div>
-        </a>
-        </article>
-
-    </div>
-</section>
+    </section>
 
 
-<footer>
-    <a href="/">СУПЕРСАЙТ - мебель ручной работы</a>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/catalog">Изделия</a>
-        <a href="/decors">Декор</a>
-        <a href="#contacts">Контакты</a>
-        <a href="/privacy">Политика конфиденциальности</a>
-    </nav>
-</footer>
+    <footer class="footer">
+        <a class="footer__link" href="/">СУПЕРСАЙТ - мебель ручной работы</a>
+        <nav class="footer__nav">
+            <a class="footer__link" href="/">Главная</a>
+            <a class="footer__link" href="/catalog.html">Изделия</a>
+            <a class="footer__link" href="/decors">Декор</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
+            <a class="footer__link" href="/privacy">Политика конфиденциальности</a>
+        </nav>
+    </footer>
 
 <script src="js/catalog.js"></script>
 </body>

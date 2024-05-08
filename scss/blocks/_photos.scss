@@ -30,11 +30,31 @@
         margin-bottom: var(--margin-y);
     }
 
-    /* при старте выкл два раздела */
-    #panno,
-    #tumbs,
-    #decor {
+    /* при старте выкл разделы, кроме первого */
+    & [data-gallery-group="tumbs"],
+    & [data-gallery-group="panno"],
+    & [data-gallery-group="decor"] {
         display: none;
+    }
+
+
+    /* media - photos */
+    @media (max-width: 560px) {
+        & {
+            --size-photo: 200px;
+        }
+    }
+
+    @media (max-width: 470px) {
+        & {
+            --size-photo: 180px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        & {
+            --size-photo: 300px;
+        }
     }
 }
 

@@ -10,14 +10,14 @@
         color: white;
     }
 
-    // a {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
-
     &__image {
         width: 70px;
         border-radius: 50%;
+    }
+
+    @media (max-width: 680px) {
+        &__name {
+            display: none;
+        }
     }
 }

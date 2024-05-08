@@ -12,6 +12,7 @@
   background-image: url(../images/banner_3_light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* media - banner */
 }
 .banner__content {
   display: flex;
@@ -19,7 +20,7 @@
   justify-content: center;
   align-items: flex-start;
 }
-.banner__title {
+.banner__heading {
   font-size: 40px;
   color: white;
   margin-bottom: 20px;
@@ -33,8 +34,36 @@
 .banner__button {
   translate: 0 70px;
 }
+@media (min-width: 1700px) {
+  .banner {
+    background-position: bottom;
+  }
+}
+@media (max-width: 1500px) {
+  .banner {
+    padding-left: var(--padding-x);
+    background-position: -7px;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    background-position: left;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    min-height: 400px;
+  }
+  .banner__button {
+    translate: 0 40px;
+  }
+}
+@media (max-width: 480px) {
+  .banner__heading {
+    font-size: 30px;
+  }
+}
 
-/* about */
 .about {
   display: flex;
   justify-content: space-between;
@@ -94,19 +123,38 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 45%;
   max-height: 500px;
 }
 .about__image {
+  max-width: unset;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.catalog {
-  --size-card-img: 250px;
+@media (max-width: 1000px) {
+  .about__image:nth-child(2) {
+    display: none;
+  }
+  .about__wrap-images {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .about__content {
+    max-width: 100%;
+  }
 }
-.catalog__heading {
+@media (max-width: 800px) {
+  .about__list {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .about__wrap-images {
+    display: none;
+  }
+}
+
+.section-catalog__heading {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -114,13 +162,13 @@
   font-size: var(--font-size-heading);
   margin-bottom: var(--margin-y);
 }
-.catalog__heading::before {
+.section-catalog__heading::before {
   content: "";
   width: 40px;
   height: 3px;
   background-color: black;
 }
-.catalog__list {
+.section-catalog__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -129,10 +177,13 @@
   gap: 20px;
   margin-bottom: var(--margin-y);
 }
-.catalog__flex-center {
+.section-catalog__wrap--flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.section-catalog__wrap--margin-bot {
+  margin-bottom: 30px;
 }
 
 /* media - раздел с товарами */
@@ -141,10 +192,10 @@
     margin-bottom: var(--margin-top-bot);
   }
 }
-/* catalog  - мебель и здесь же decors - одинаковые разделы*/
 .card-base {
   --size-product: 250px; /* карточка товара */
   position: relative;
+  /* media - catalog */
 }
 .card-base:hover {
   box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
@@ -174,13 +225,21 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 570px) {
+  .card-base {
+    --size-product: 200px;
+  }
+}
+@media (max-width: 470px) {
+  .card-base {
+    --size-product: 300px;
+  }
+}
 
 .vk {
-  --bg_default: #f2f2f2;
   padding: var(--margin-y) var(--padding-x);
-  color: var(--bg_default);
+  color: #f2f2f2;
   background-color: #323949;
-  background-image: url(../images/bg_vk.jpg);
   background-size: cover;
 }
 .vk__flex-row {
@@ -230,7 +289,7 @@
 .pagination__button--active, .pagination__button:hover {
   background-color: var(--secondary-color);
 }
-@media (max-width: 618px) {
+@media (max-width: 695px) {
   .pagination {
     gap: 0;
   }
@@ -245,7 +304,8 @@
 
 .photos {
   --size-photo: 250px;
-  /* при старте выкл два раздела */
+  /* при старте выкл разделы, кроме первого */
+  /* media - photos */
 }
 .photos__heading {
   display: flex;
@@ -280,10 +340,23 @@
   justify-content: center;
   margin-bottom: var(--margin-y);
 }
-.photos #panno,
-.photos #tumbs,
-.photos #decor {
+.photos [data-gallery-group=tumbs], .photos [data-gallery-group=panno], .photos [data-gallery-group=decor] {
   display: none;
+}
+@media (max-width: 560px) {
+  .photos {
+    --size-photo: 200px;
+  }
+}
+@media (max-width: 470px) {
+  .photos {
+    --size-photo: 180px;
+  }
+}
+@media (max-width: 420px) {
+  .photos {
+    --size-photo: 300px;
+  }
 }
 
 /* feedback */

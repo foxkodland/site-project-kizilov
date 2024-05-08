@@ -27,5 +27,24 @@
         align-items: center;
         gap: 10px;
     }
+
+
+    /* media footer */
+    @media (max-width: 980px) {
+        & {
+            padding-inline: var(--padding-x);
+        }
+
+        &__nav {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 600px) {
+        & {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
 }
 

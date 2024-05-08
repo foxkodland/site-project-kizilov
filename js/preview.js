@@ -1,5 +1,5 @@
-const miniatures = document.querySelectorAll('.product-description .miniatures img')
-const preview = document.querySelector('.product-description .preview img')
+const miniatures = document.querySelectorAll('.images-preview__miniature')
+const preview = document.querySelector('.images-preview__preview-image')
 
 
 miniatures.forEach((img) => {

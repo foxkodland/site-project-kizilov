@@ -1,0 +1,79 @@
+
+/* для фулскрин в связке с js*/
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10; /* чтобы не видно было при скроле другие элементы с position: absolute */
+
+    &__bg {
+        background-color: rgba(0, 0, 0, 0.854);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    
+        cursor: zoom-out;
+    }
+
+    &__image {
+        height: 100%;
+        max-width: 95%;
+        object-fit: cover;
+        border: 5px solid white;
+        box-sizing: border-box;
+    }
+
+    &__button {
+        position: absolute;
+        top: 49%;
+        left: 20px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        color: white;
+        font-size: 20px;
+        font-weight: 900;
+    
+        width: 45px;
+        height: 45px;
+    
+        border-radius: 100px;
+        border: 1px solid white;
+
+        &--right {
+            left: unset;
+            right: 20px;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+            transition: .3s;
+            cursor: pointer;
+        }
+    }
+
+    &__cross {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    &--isVisible {
+        display: none;
+    }
+}
+
+

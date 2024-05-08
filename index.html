@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СУПЕРСАЙТ - мебель ручно работы</title>
-    <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
+    <link type="Image/x-icon" href="/images/favicon.ico" rel="icon">
+
+    <meta name="description" content="Мебель ручной работы">
+
+    <!-- preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preload" fetchpriority="high" as="image" href="/images/banner_3_light.jpg">
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fullscreen.css">
-    <link rel="stylesheet" href="css/buttons_menu.css">
     <link rel="stylesheet" href="css/contacts.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a class="logo__link" href="/"><img class="logo__image" src="images/logo.jpg" alt=""></a>
+            <a class="logo__link" href="/"><img class="logo__image" src="images/logo.jpg" alt="Главная страница"></a>
             <p class="logo__name">Kizilov</p>
         </div>
         <div class="header__empty"></div>
@@ -38,9 +44,9 @@
 
     <div class="banner">
         <div class="banner__content">
-            <h1 class="banner__title">Мебель ручной работы на заказ</h1>
+            <h1 class="banner__heading">Мебель ручной работы на заказ</h1>
             <p class="banner__slogan">Изделия для уникальных людей</p>
-            <a class="banner__button" href="#catalog"><button class="button">Наши работы</button></a>
+            <a class="banner__button button" href="#catalog">Наши работы</a>
         </div>
     </div>
 
@@ -67,118 +73,118 @@
             </div>
 
             <div class="about__wrap-images">
-                <!-- <img src="images/Файл_002.png" alt=""> -->
-                <img class="about__image" src="images/about_1_light.png" alt="">
-                <img class="about__image" src="images/about_2_light.png" alt="">
+                <!-- <img src="images/Файл_002.png" alt="" loading="lazy"> -->
+                <img class="about__image" src="images/about_1_light.png" alt="" loading="lazy">
+                <img class="about__image" src="images/about_2_light.png" alt="" loading="lazy">
             </div>
         </div>
     </section>
 
 
     <section class="section section--dark" id="catalog">
-        <div class="catalog">
-            <h2 class="catalog__heading">Мебель</h2>
-            <div class="catalog__list">              
-                <a href="" class="catalog__item card-base">
+        <div class="section-catalog">
+            <h2 class="section-catalog__heading">Мебель</h2>
+            <div class="section-catalog__list">              
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="">
+                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                        <img class="card-base__image" src="files/zdlujzpv.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                        <img class="card-base__image" src="files/1.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                        <img class="card-base__image" src="files/2.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                        <img class="card-base__image" src="files/1.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="" loading="lazy">
                     </article>
                 </a>
             </div>
 
-            <div class="catalog__flex-center">
+            <div class="section-catalog__wrap--flex-center">
                 <a href="/catalog.html" class="button">Посмотреть все</a>
             </div>
         </div>
     </section>
 
 
-    <section class="section section--light" id="catalog">
-        <div class="catalog">
-            <h2 class="catalog__heading">Элементы декора</h2>
-            <div class="catalog__list">              
-                <a href="" class="catalog__item card-base">
+    <section class="section section--light" id="decors">
+        <div class="section-catalog">
+            <h2 class="section-catalog__heading">Элементы декора</h2>
+            <div class="section-catalog__list">              
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="">
+                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                        <img class="card-base__image" src="files/zdlujzpv.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                        <img class="card-base__image" src="files/1.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/ztzxuxbe.jpg" alt="">
+                        <img class="card-base__image" src="files/3.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/xcrxrzkf.jpg" alt="">
+                        <img class="card-base__image" src="files/1.jpg" alt="" loading="lazy">
                     </article>
                 </a>
-                <a href="" class="catalog__item card-base">
+                <a href="" class="card-base">
                     <article class="card-base__wrap">
                         <h3 class="card-base__title">Товар 1</h3>
-                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="" loading="lazy">
                     </article>
                 </a>
             </div>
 
-            <div class="catalog__flex-center">
+            <div class="section-catalog__wrap--flex-center">
                 <a href="/catalog.html" class="button">Посмотреть все</a>
             </div>
         </div>
@@ -202,29 +208,29 @@
                     <button data-photos="decor" class="pagination__button">Декор</button>
                 </div>
             </div>
-            <div class="photos__gallery" id="commode">
-                <img src="images/del_material.webp" alt="">
-                <img src="images/Файл_000.png" alt="">
-                <img src="images/Файл_001.png" alt="">
-                <img src="images/Файл_002.png" alt="">
-                <img src="images/Файл_001.png" alt="">
-                <img src="images/del_material.webp" alt="">
-                <img src="images/Файл_000.png" alt="">
+            <div class="photos__gallery" data-gallery-group="commode">
+                <img src="files/zdlujzpv.jpg" alt="" loading="lazy">
+                <img src="files/dlkofuoj.jpg" alt="" loading="lazy">
+                <img src="files/isqmvarc.jpg" alt="" loading="lazy">
+                <img src="files/2.jpg" alt="" loading="lazy">
+                <img src="files/3.jpg" alt="" loading="lazy">
+                <img src="files/1.jpg" alt="" loading="lazy">
+                <img src="files/2.jpg" alt="" loading="lazy">
             </div>
-            <div class="photos__gallery" id="tumbs">
-                <img src="images/del_material.webp" alt="">
-                <img src="images/Файл_000.png" alt="">
+            <div class="photos__gallery" data-gallery-group="tumbs">
+                <img src="files/1.jpg" alt="" loading="lazy">
+                <img src="files/2.jpg" alt="" loading="lazy">
             </div>
-            <div class="photos__gallery" id="panno">
-                <img src="images/del_material.webp" alt="">
-                <img src="images/Файл_000.png" alt="">
-                <img src="images/del_material.webp" alt="">
-                <img src="images/Файл_000.png" alt="">
-                <img src="images/Файл_001.png" alt="">
+            <div class="photos__gallery" data-gallery-group="panno">
+                <img src="files/zdlujzpv.jpg" alt="" loading="lazy">
+                <img src="files/isqmvarc.jpg" alt="" loading="lazy">
+                <img src="files/2.jpg" alt="" loading="lazy">
+                <img src="files/3.jpg" alt="" loading="lazy">
+                <img src="files/1.jpg" alt="" loading="lazy">
             </div>
-            <div class="photos__gallery" id="decor">
-                <img src="images/del_material.webp" alt="">
-                <img src="images/Файл_000.png" alt="">
+            <div class="photos__gallery" data-gallery-group="decor">
+                <img src="files/isqmvarc.jpg" alt="" loading="lazy">
+                <img src="files/2.jpg" alt="" loading="lazy">
             </div>
         </div>
     </section>
@@ -309,7 +315,7 @@
             <h2 class="maps__heading">Мы здесь</h2>
             <div class="maps__content">
                 <p class="maps__sity">г.ГОРОД, ул.СУПЕР</p>
-                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/moskva/53000094/?ll=37.385439%2C55.584227&utm_medium=mapframe&utm_source=maps&z=9.05" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.385439%2C55.584227&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.05" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>    
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/moskva/53000094/?ll=37.385439%2C55.584227&utm_medium=mapframe&utm_source=maps&z=9.05" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe title="maps" src="https://yandex.ru/map-widget/v1/?ll=37.385439%2C55.584227&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.05" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>    
             </div>
         </div>
     </section>

@@ -5,14 +5,21 @@
   justify-content: space-between;
   gap: 30px;
 }
+@media (max-width: 1150px) {
+  .section-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 20px;
+  /* media - block contacts с формой */
 }
-.contacts .contacts__heading {
+.contacts__heading {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,18 +27,18 @@
   font-size: var(--font-size-heading);
   margin-bottom: var(--margin-y);
 }
-.contacts .contacts__heading::before {
+.contacts__heading::before {
   content: "";
   width: 40px;
   height: 3px;
   background-color: black;
 }
-.contacts .contacts__description {
+.contacts__description {
   border-left: 4px orange solid;
   padding: 5px;
   padding-left: 10px;
 }
-.contacts .contacts__block {
+.contacts__block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,8 +48,25 @@
   border-radius: 30px;
   box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
 }
-.contacts .contacts__text {
+.contacts__text {
   margin-bottom: 20px;
+}
+@media (max-width: 1150px) {
+  .contacts__heading, .contacts__description {
+    margin-bottom: var(--margin-y);
+  }
+  .contacts__block {
+    margin: auto;
+  }
+}
+@media (max-width: 510px) {
+  .contacts__block {
+    width: 100%;
+  }
+  .contacts__text {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 /* форма */
@@ -95,6 +119,19 @@
 .form__privacy {
   margin-bottom: 20px;
 }
+@media (max-width: 790px) {
+  .form {
+    width: 100%;
+  }
+  .form__flex-row {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .form__group > div {
+    margin-bottom: 20px;
+  }
+}
 
 .privacy {
   display: flex;
@@ -111,40 +148,8 @@
   text-decoration: underline;
   color: #2b2b2b;
 }
-
-/* media - block contacts с формой */
-@media (max-width: 1150px) {
-  .contacts {
-    flex-direction: column;
-  }
-  .contacts h2,
-  .contacts .info > p {
-    margin-bottom: var(--margin-top-bot);
-  }
-  .contacts .phone,
-  .contacts form {
-    margin: auto;
-  }
-}
-@media (max-width: 790px) {
-  .contacts form {
-    width: 100%;
-  }
-  .contacts form .flex-row {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-}
 @media (max-width: 510px) {
-  .contacts form .privacy {
+  .privacy {
     padding-left: 20px;
-  }
-  .contacts .phone {
-    width: 100%;
-  }
-  .contacts .phone p {
-    width: 80%;
-    text-align: center;
   }
 }/*# sourceMappingURL=contacts.css.map */

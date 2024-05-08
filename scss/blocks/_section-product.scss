@@ -1,0 +1,15 @@
+.section-product {
+    padding: var(--padding-top) var(--padding-left-right);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+    @media (max-width: 700px) {
+        & {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+}

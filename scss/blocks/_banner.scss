@@ -21,7 +21,7 @@
         align-items: flex-start;
     }
 
-    &__title {
+    &__heading {
         font-size: 40px;
         color: white;
         margin-bottom: 20px;
@@ -36,5 +36,43 @@
 
     &__button {
         translate: 0 70px;
+    }
+
+
+    
+    /* media - banner */
+    @media (min-width: 1700px) {
+        & {
+            background-position: bottom;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        & {
+            padding-left: var(--padding-x);
+            background-position: -7px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        & {
+            background-position: left;
+        }
+    }
+
+    @media (max-width: 500px) {
+        & {
+            min-height: 400px;
+        }
+
+        &__button {
+            translate: 0 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__heading {
+            font-size: 30px;
+        }
     }
 }

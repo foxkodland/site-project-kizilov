@@ -1,150 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- temp -->
-    <link rel="stylesheet" href="css/contacts.css">
-    <!--  -->
-
+    <title>Product</title>
+    <link type="Image/x-icon" href="/images/favicon.ico" rel="icon">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/fullscreen.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="images/logo.jpg" alt="">
+            <a class="logo__link" href="/"><img class="logo__image" src="images/logo.jpg" alt="Главная страница"></a>
+            <p class="logo__name">Kizilov</p>
         </div>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="/catalog">Изделия</a>
-            <a href="/decors">Декор</a>
-            <a href="#feedback">Отзывы</a>
-            <a href="#contacts">Контакты</a>
+        <div class="header__empty"></div>
+        <div class="burger burger--visible">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <a class="menu__link" href="/">Главная</a>
+            <a class="menu__link"href="/catalog.html">Изделия</a>
+            <a class="menu__link"href="/catalog.html#decors">Декор</a>
+            <a class="menu__link"href="#feedback">Отзывы</a>
+            <a class="menu__link"href="#contacts">Контакты</a>
         </nav>
+        
+        <a class="header__phone" href="tel:+79991112233">8-988-777-55-44</a>
     </header>
 
 
-    <section class="product-description">
-        <div class="images">
-            <div class="preview">
-                <img src="images/fonar.jpg" alt="">
+    <section class="section section--light">
+        <div class="section-product">
+            <div class="images-preview">
+                <div class="images-preview__preview-wrap">
+                    <img class="images-preview__preview-image" src="files/dlkofuoj.jpg" alt="">
+                </div>
+                <div class="images-preview__miniatures-wrap">
+                    <img class="images-preview__miniature" src="files/dlkofuoj.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/1.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/isqmvarc.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/kkwjgwcj.png" alt="">
+                    <img class="images-preview__miniature" src="files/myzkvaex.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/oluwejln.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/2.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/myzkvaex.jpg" alt="">
+                    <img class="images-preview__miniature" src="files/3.jpg" alt="">
+                </div>
             </div>
-            <div class="miniatures">
-                <img src="images/fonar.jpg" alt="">
-                <img src="images/icons8-карандаш-96.png" alt="">
-                <img src="images/Файл_000.png" alt="">
-                <img src="images/Файл_002.png" alt="">
-                <img src="images/fonar.jpg" alt="">
-                <img src="images/icons8-карандаш-96.png" alt="">
-                <img src="images/Файл_000.png" alt="">
-                <img src="images/Файл_002.png" alt="">
-                <img src="images/fonar.jpg" alt="">
-                <img src="images/icons8-карандаш-96.png" alt="">
-            </div>
-        </div>
 
-        <div class="info">
-            <h2>Тумба Морокко</h2>
-            <p>Материал фасадов: <span>бук, дуб по требованию</span></p>
-            <p>Материал корпуса: <span>МДФ</span></p>
-            <p class="color">Цвет: <span>на выбор клиента</span></p>
-            <p class="size">Размер: <span>130х654х25мм</span></p>
+            <div class="product-info">
+                <h2 class="product-info__title">Тумба Морокко</h2>
+                <p class="product-info__field">Материал фасадов: <span>бук, дуб по требованию</span></p>
+                <p class="product-info__field">Материал корпуса: <span>МДФ</span></p>
+                <p class="product-info__field">Цвет: <span>на выбор клиента</span></p>
+                <p class="product-info__field">Размер: <span>130х654х25мм</span></p>
 
-            <div class="empty"></div>
+                <div class="product-info__empty"></div>
 
-            <div class="price">
-                <p>25 098р</p>
-                <a class="button" href="#">Заказать</a>
+                <div class="product-info__wrap-row">
+                    <p class="product-info__price">25 098р</p>
+                    <a class="button button--dark" href="#">Заказать</a>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="moreItems">
-        <h2>Примеры ручной работы</h2>
-        <div class="items">
-            <a href="">
-                <article class="item">
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_000.png" alt="">
-                </article>
-            </a>
-            <a href="">
-                <article class="item">
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
-            <a href="">
-                <article class="item">
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_001.png" alt="">
-                </article>
-            </a>
-            <a href="">
-                <article class="item">
-                    <h3>Товар 1</h3>
-                    <img src="images/Файл_002.png" alt="">
-                </article>
-            </a>
+    <section class="section section--dark">
+        <div class="section-catalog">
+            <h2 class="section-catalog__heading">Примеры ручной работы</h2>
+            <div class="section-catalog__list">              
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/isqmvarc.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/zdlujzpv.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/2.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/2.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/3.jpg" alt="">
+                    </article>
+                </a>
+                <a href="" class="section-catalog__item card-base">
+                    <article class="card-base__wrap">
+                        <h3 class="card-base__title">Товар 1</h3>
+                        <img class="card-base__image" src="files/oluwejln.jpg" alt="">
+                    </article>
+                </a>
+            </div>
 
+            <div class="section-catalog__wrap--flex-center">
+                <a href="/catalog.html" class="button">Посмотреть все</a>
+            </div>
         </div>
     </section>
 
 
 
-    <section class="contacts" id="contacts">
-        <div class="info">
-            <h2>Связаться с нами</h2>
-            <p>Все наши изделия - ручной труд. <br> Перед тем как приступить к работе, мы обсудим с вами детали и пожелания</p>
-            <div class="phone">
-                <p>Позвоните или пишите на <span style="font-weight: bold;">whats up</span></p>
-                <a class="button number" href="tel:+79991112233">8-999-111-22-33</a>
+    <section class="section section--light" id="contacts">
+        <div class="section-contacts">
+            <div class="contacts">
+                <h2 class="contacts__heading">Связаться с нами</h2>
+                <p class="contacts__description">Все наши изделия - ручной труд. <br> Перед тем как приступить к работе, мы обсудим с вами детали и пожелания</p>
+                <div class="contacts__block">
+                    <p class="contacts__text">Позвоните или пишите на <span style="font-weight: bold;">whats up</span></p>
+                    <a class="button button--blue" href="tel:+79991112233">8-999-111-22-33</a>
+                </div>
             </div>
+
+            <form class="form" action="" autocomplete="off" method="post">
+                <h3 class="form__heading">Оставьте заявку</h3>
+            
+                <div class="form__flex-row">
+                    <div class="form__group">
+                        <div>
+                            <label class="form__label" for="name">Как вас зовут</label>
+                            <input class="form__input" name="name" type="text" placeholder="ваше имя" required>
+                        </div>
+                        
+                        <div>
+                            <label class="form__label" for="contact">Телефон или email</label>
+                            <input class="form__input" name="contact" type="text" placeholder="как с вами связаться" required>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="text">Детали заказа (необязательно)</label>
+                        <textarea class="form__input" name="text" id="" rows="6" placeholder="Вид изделия или пожелания"></textarea>
+                    </div>
+                </div>
+                <div class="form__privacy privacy">
+                    <input class="privacy__control" type="checkbox" name="check_privacy" id="check_privacy" required>
+                    <label class="privacy__label" for="check_privacy">Даю согласие на <a class="privacy__link" href="/privacy">обработку персональных данных</a></label>
+                </div>
+                <button class="button" type="submit">Отправить</button>
+            </form>
         </div>
+    </section> 
 
-        <form action="" autocomplete="off" method="post">
-            <h3>Оставьте заявку</h3>
-        
-            <div class="flex-row">
-                <div class="left">
-                    <div>
-                        <label for="">Как вас зовут</label>
-                        <input type="text" placeholder="ваше имя" required>
-                    </div>
-        
-                    <div>
-                        <label for="">Телефон или email</label>
-                        <input type="text" placeholder="как с вами связаться" required>
-                    </div>
-                </div>
-                <div class="right">
-                    <label for="">Детали заказа (необязательно)</label>
-                    <textarea name="" id="" rows="7" placeholder="Вид изделия или пожелания"></textarea>
-                </div>
-            </div>
-            <div class="privacy">
-                <input type="checkbox" name="check_privacy" id="check_privacy" required>
-                <label for="check_privacy">Даю согласие на <a href="/privacy">обработку персональных данных</a></label>
-            </div>
-            <button class="button" type="submit">Отправить</button>
-        </form>
 
-</section> 
-
-    <footer>
-        <a href="/">СУПЕРСАЙТ - мебель ручной работы</a>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="/catalog">Изделия</a>
-            <a href="/decors">Декор</a>
-            <a href="#contacts">Контакты</a>
-            <a href="/privacy">Политика конфиденциальности</a>
+    <footer class="footer">
+        <a class="footer__link" href="/">СУПЕРСАЙТ - мебель ручной работы</a>
+        <nav class="footer__nav">
+            <a class="footer__link" href="/">Главная</a>
+            <a class="footer__link" href="/catalog.html">Изделия</a>
+            <a class="footer__link" href="/decors">Декор</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
+            <a class="footer__link" href="/privacy">Политика конфиденциальности</a>
         </nav>
     </footer>
 

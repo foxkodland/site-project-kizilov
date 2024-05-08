@@ -1,8 +1,5 @@
 
-.catalog {
-    // --bg-gray: #f1f1f1;
-    // --color-gray: #868686;
-    --size-card-img: 250px;
+.section-catalog {
 
     &__heading {
         @include heading-line;
@@ -21,10 +18,14 @@
         margin-bottom: var(--margin-y);
     }
 
-    &__flex-center {
+    &__wrap--flex-center {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &__wrap--margin-bot {
+        margin-bottom: 30px;
     }
 }
 

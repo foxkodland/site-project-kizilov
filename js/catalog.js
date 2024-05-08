@@ -1,15 +1,15 @@
-const buttonsExamples = document.querySelectorAll('.section_catalog .buttons button')
+const buttonsExamples = document.querySelectorAll('.pagination__button')
 
 buttonsExamples.forEach((btn) => {
     btn.addEventListener("click", function (){
 
         // удалить у кнопок класс .active
         buttonsExamples.forEach((btn) => {
-            btn.classList.remove("active")
+            btn.classList.remove("pagination__button--active")
         })
 
         // дать класс active нужной кнопке
-        btn.classList.add("active")
+        btn.classList.add("pagination__button--active")
 
 
         // получить атрибут кноки
@@ -22,7 +22,7 @@ buttonsExamples.forEach((btn) => {
 
 
 function hidenShowItems(group) {
-    document.querySelectorAll('.section_catalog .items .card').forEach((card) => {
+    document.querySelectorAll('.card-medium').forEach((card) => {
         if (card.dataset.catalog_group == group || group == "catalogAll") {
             card.style.display = "flex";
         }
